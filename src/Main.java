@@ -3,8 +3,8 @@ public class Main {
         CreditPaymentService service = new CreditPaymentService();
         int sum = 1_000_000; //сумма кредита
         double rate = 9.99; // ставка
-        double n = 36; // срок в месяцах
-        int monthlyPayment = service.calculate(sum, rate, n);
+        double term = 36; // срок в месяцах
+        int monthlyPayment = service.calculate(sum, rate, term);
         System.out.println("Ежемесячный платеж:" + monthlyPayment);
     }
 }
